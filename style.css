@@ -25,9 +25,8 @@ header{
 
  .btnheader{
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     position: relative;
-    left: 75%;    
  }
 
 /* header */
@@ -42,6 +41,9 @@ header{
     border-radius: 6px;
     cursor: pointer;
     font-family: Arial;
+    left: 100px;
+    position: relative;
+    left: 70%;
 }
 
 .skillsButtonclass:hover{

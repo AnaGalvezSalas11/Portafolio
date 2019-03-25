@@ -1,0 +1,137 @@
+html{
+    height: 95%;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: url(image/wallpapper.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+
+header{
+    flex: 0 0 auto;
+    padding: 20px;
+    position: absolute;
+    width: 100%
+ }
+
+ .btnheader{
+    display: flex;
+    width: 100%;
+    position: relative;
+    left: 75%;    
+ }
+
+/* header */
+
+
+.skillsButtonclass, .pojectsButton{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #3d3c3c;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: Arial;
+}
+
+.skillsButtonclass:hover{
+    font-size: 30px;
+}
+.pojectsButton:hover{
+    font-size: 30px;
+}
+
+/* pagina principal */
+
+.coverPage{
+   width: 100%;
+}
+
+
+.logo{
+    width: 20%;
+    position: relative;
+    top: -200px;
+}
+
+/* .image {
+display: block;    
+
+} */
+
+.icon1, .icon2, .icon3{
+    color: #3d3c3c;
+}
+
+.imageAna {
+    border-radius: 57px;
+    width: 25%;
+    top: 150px;
+    left: 200px;
+    position: relative;
+}
+
+
+/* habilidades */
+
+.devicon{
+    width: 100%;
+    position: relative;
+    top: 200px; 
+    left: 200px;
+}
+
+.description {
+    position: relative;
+    width: 50%;
+    text-align: justify;
+    font-family: Arial;
+    color: #3d3c3c;
+    left: 25%;
+    top: 100px;
+} 
+
+.icon4{
+    color: #3d3c3c;
+    right: auto;
+    top: 350px;
+    position: relative;
+    left: 2%;
+    cursor: pointer;
+
+}
+
+.skillsStyle{
+    display: none;
+}
+
+/* footer */
+.information{
+    flex: 0 0 auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+
+.logosFooter{
+    display: flex;
+    justify-content:space-around;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.imgIn{
+    width: 8%;
+}
+

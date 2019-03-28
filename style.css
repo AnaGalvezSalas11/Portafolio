@@ -1,39 +1,21 @@
-html{
-    height: 95%;
-}
-
-
-body{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background: url(image/wallpapper.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-}
-
 
 header{
     flex: 0 0 auto;
-    padding: 20px;
+    padding: 0;
     position: absolute;
-    width: 100%
+    width: 100%;
  }
 
  .btnheader{
     display: flex;
-    /* width: 100%; */
+    width: 100%;
     position: relative;
  }
 
 /* header */
 
 
-.skillsButtonclass, .pojectsButton{
-    text-decoration: none;
+.skillsButtonclass, .pojectsButton, .btnaboutMe{
     padding: 10px;
     font-weight: 600;
     font-size: 20px;
@@ -41,38 +23,72 @@ header{
     border-radius: 6px;
     cursor: pointer;
     font-family: Arial;
-    left: 100px;
     position: relative;
-    left: 70%;
+    left: auto;
 }
 
 .skillsButtonclass:hover{
-    font-size: 30px;
+    color: rgb(233, 137, 92);
+    background-color: rgb(51, 49, 51);
+    opacity: 0.5;
 }
 .pojectsButton:hover{
-    font-size: 30px;
+    color: rgb(233, 137, 92);
+    background-color: rgb(51, 49, 51);
+    opacity: 0.5;
 }
 
+.btnaboutMe:hover{
+    color: rgb(233, 137, 92);
+    background-color: rgb(51, 49, 51);
+    opacity: 0.5;
+}
 /* pagina principal */
 
 .coverPage{
    width: 100%;
 }
 
-
-.logo{
-    width: 20%;
-    position: relative;
-    top: -200px;
+html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-/* .image {
-display: block;    
 
-} */
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.home{
+    overflow: hidden; 
+    background: #f3c6b4; 
+}
+
+.logo{
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    top: 200px;
+    max-width: 100%;
+}
 
 .icon1, .icon2, .icon3{
     color: #3d3c3c;
+}
+
+.icon1:hover{
+    color: #AE2D18;
+}
+
+.icon2:hover{
+    color: black
+}
+
+.icon3:hover{
+    color: #0077B5;
 }
 
 .imageAna {
@@ -121,8 +137,8 @@ display: block;
 .information{
     flex: 0 0 auto;
     position: absolute;
-    bottom: 0;
-    width: 100%
+    bottom: 12px;
+    width: 100%;
 }
 
 .logosFooter{
@@ -137,3 +153,20 @@ display: block;
     width: 8%;
 }
 
+/* sobre mi */
+
+
+.aboutMe{
+    margin: 0; 
+    padding: 0;
+    flex-direction: column;
+    width: 100%;
+    background: url(image/wallpapper.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    display: none;
+    overflow: hidden;
+
+}

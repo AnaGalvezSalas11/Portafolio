@@ -79,7 +79,11 @@ body {
     max-width: 100%;
 }
 
-.icon1, .icon2, .icon3{
+.icon5{
+    cursor: pointer;
+}
+
+.icon1, .icon2, .icon3, .icon5{
     color: #3d3c3c;
 }
 
@@ -95,13 +99,12 @@ body {
     color: #0077B5;
 }
 
-.imageAna {
-    border-radius: 57px;
-    width: 25%;
-    top: 150px;
-    left: 200px;
-    position: relative;
+.icon5:hover{
+    color: rgb(216, 92, 21);
 }
+
+
+
 
 
 /* habilidades */
@@ -113,15 +116,7 @@ body {
     left: 200px;
 }
 
-.description {
-    position: relative;
-    width: 50%;
-    text-align: justify;
-    font-family: Arial;
-    color: #3d3c3c;
-    left: 25%;
-    top: 100px;
-} 
+
 
 .icon4{
     color: #3d3c3c;
@@ -179,3 +174,28 @@ body {
 .skillcontent{
     display: none;
 }
+
+.aboutMeDiv{
+    display: flex;
+}
+
+.imageAna {
+    border-radius: 57px;
+    /* top: 150px; */
+    /* left: 200px; */
+    position: relative;
+    width: 25%;
+    height: 25%;
+    
+}
+
+.description {
+    position: relative;
+    width: 40%;
+    text-align: justify;
+    font-family: Arial;
+    color: #3d3c3c;
+    /* left: 25%;
+    top: 100px; */
+    font-size: 20px !important;  
+} 

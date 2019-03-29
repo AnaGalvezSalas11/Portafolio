@@ -7,6 +7,13 @@ document.getElementById('skillsButton').addEventListener('click', () => {
 
 })
 
+document.getElementById('btnhome').addEventListener('click', () =>{
+  document.getElementById('coverPageId').style.display='block',
+  document.getElementById('aboutMeid').style.display= 'none',
+  document.getElementById('skills').style.display= 'none'
+
+})
+
 document.getElementById('btnReturn').addEventListener('click', () => {
     document.getElementById('coverPageId').style.display= 'block';
     document.getElementById('skills').style.display= 'none';

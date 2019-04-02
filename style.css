@@ -11,6 +11,7 @@ header{
     display: flex;
     width: 100%;
     position: relative;
+    z-index: 100;
  }
 
 
@@ -47,6 +48,10 @@ header{
 
 /* pagina principal */
 
+.canvasclass{
+    position: inherit
+}
+
 .coverPage{
    width: 100%;
    height: 100%;
@@ -77,6 +82,7 @@ body {
     left: 30%;
     top: 200px;
     max-width: 100%;
+    height: auto;
 }
 
 .icon5{
@@ -85,6 +91,7 @@ body {
 
 .icon1, .icon2, .icon3, .icon5{
     color: #3d3c3c;
+    text-decoration: none;
 }
 
 .icon1:hover{
@@ -105,8 +112,6 @@ body {
 
 
 
-
-
 /* habilidades */
 
 .devicon{
@@ -118,15 +123,15 @@ body {
 
 
 
-.icon4{
-    color: #3d3c3c;
-    right: auto;
+     .icon4{
+    opacity: 0; 
+    /* right: auto;
     top: 350px;
     position: relative;
     left: 2%;
-    cursor: pointer;
+    cursor: pointer; */
 
-}
+    }  
 
 .skillsStyle{
     display: none;
@@ -146,10 +151,12 @@ body {
     position: relative;
     width: 100%;
     margin-bottom: 10px;
+    height: auto;
 }
 
 .imgIn{
     width: 8%;
+    height: auto;
 }
 
 /* sobre mi */
@@ -181,8 +188,8 @@ body {
 
 .imageAna {
     border-radius: 57px;
-    /* top: 150px; */
-    /* left: 200px; */
+    top: 130px;
+    left: 200px;
     position: relative;
     width: 25%;
     height: 25%;
@@ -195,7 +202,106 @@ body {
     text-align: justify;
     font-family: Arial;
     color: #3d3c3c;
-    /* left: 25%;
-    top: 100px; */
+     left: 25%;
+    top: 200px; 
     font-size: 20px !important;  
 } 
+
+.styleskills{
+    margin: 0; 
+    padding: 0;
+    flex-direction: column;
+    width: 100%;
+    background: url(image/wallpapper.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    display: none;
+    overflow: hidden;
+    height: 100%;
+    /* transition-property: opacity, left, top, height; */
+    transition-duration: 3s, 5s, 3s, 5s;
+
+}
+
+
+.icon6, .icon7, .icon8, .icon9{
+    margin: 8%;
+    font-size: 80px;
+    position: relative;
+    left: 8%;
+
+}
+
+
+.icon10, .icon11, .icon12{
+    margin: 8%;
+    font-size: 80px;
+    position: relative;
+    left: 15%;    
+
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+.styleskillsdiv2{
+    top: 50px;
+    position: relative;
+
+} 
+
+.styleskillsdiv{
+    top: 300px;
+    position: relative;
+}
+
+.slide-top {
+	-webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate-reverse forwards;
+	        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate-reverse forwards;
+}
+
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+  
+
+/* proyectos */
+
+.projectcontent{
+    margin: 0; 
+    padding: 0;
+    flex-direction: column;
+    width: 100%;
+    background: url(image/wallpapper.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    display: none;
+    overflow: hidden;
+    height: 100%;
+}
+
+

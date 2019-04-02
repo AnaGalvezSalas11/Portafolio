@@ -4,11 +4,14 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ana Gálvez</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection">
+    </head>
 </head>
 
 <body>
@@ -18,37 +21,49 @@
         <a type="button" id="skillsButton" class="skillsButtonclass">Habilidades</a> 
         <a  type="button" id= "pojects" class="pojectsButton">Proyectos</a> 
         </div>
-
     </header>
 
         <section class="home">
                
-            <div id="coverPageId" class="coverPage">
-                    
-            <input type="image" id="logoid" class="logo" src="image/logotipo.png" alt="logo"></input>
-            <canvas id="canvas"></canvas>
+            <div id="coverPageId" class="coverPage animated fadeIn delay-s">
 
+            <img type="image" id="logoid" class="logo" src="image/logotipo.png" alt="logo"></img>
+            <canvas id="canvas" class="canvasclass"  ></canvas>
             </div>
             
         </section>
             
 
-        <section class= "aboutMe" id="aboutMeid">
+        <section class= "aboutMe  animated fadeIn delay-s" id="aboutMeid">
             <div class="aboutMeDiv">
             <img class="imageAna" src="image/ana.jpg" alt="images/ana.jpg">
             <p class="description" > Soy parte de la 7º generación de Laboratoria y Trabajadora Social de profesión, con habilidades para la comunicación interpersonal, gestión y trabajo en equipo. Los desafios los considero como una posibilidad para desarrollarme profesional y personalmente, es por este motivo que decidí ser parte de éste bootcamp.</p>
+
+            
             </div>
         </section>
 
 
-        <section class="skillcontent" class="skillsStyle" >
-            <div  id="skills">
-                    <!-- <h1></h1><i class="devicon-css3-plain colored"></i></h1> -->
-                    <i id="btnReturn" class="fas fa-angle-double-left fa-2x icon4"></i>
+        <section class="styleskills animated fadeIn delay-s" id="skills" >
+            <a id="btnReturn" class="fas fa-angle-double-left fa-2x icon4"></a>
+            <div class="container">
+            <div class="styleskillsdiv slide-top" >
+                <a class="devicon-css3-plain icon6"></a>
+                <a class="devicon-javascript-plain icon7" ></a>
+                <a class="devicon-html5-plain icon8"></a>          
+                <a class="devicon-react-original icon9"></a>
+            </div>
+            <div class="styleskillsdiv2 slide-top">
+                <i class="devicon-git-plain icon10"></i>
+                <i class="devicon-github-plain icon11"></i>
+                <i class="devicon-visualstudio-plain icon12"></i>
+            </div>
             </div>
         </section>
 
-    
+        <section class="projectcontent" id="pojectid">
+             
+        </section>
 
     <footer class="information">
         <div class="logosFooter" >
@@ -58,9 +73,9 @@
         <a class="fab fa-linkedin fa-3x icon3" href="https://www.linkedin.com/in/ana-galvez-salas/" ></a>  
         </div>
     </footer>
-
     <script src="main.js"></script>
     <script src= "index.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
 </html>

@@ -1,35 +1,48 @@
-
+// interaccion de botones y div
 
 document.getElementById('skillsButton').addEventListener('click', () => {
     document.getElementById('skills').style.display= 'block';
     document.getElementById('coverPageId').style.display= 'none';
-    document.getElementById('aboutMeid').style.display= 'none'
+    document.getElementById('aboutMeid').style.display= 'none';
+    document.getElementById('pojectid').style.display='none'
+
 
 })
 
 document.getElementById('btnhome').addEventListener('click', () =>{
-  document.getElementById('coverPageId').style.display='block',
-  document.getElementById('aboutMeid').style.display= 'none',
-  document.getElementById('skills').style.display= 'none'
+  document.getElementById('coverPageId').style.display='block';
+  document.getElementById('aboutMeid').style.display= 'none';
+  document.getElementById('skills').style.display= 'none';
+  document.getElementById('pojectid').style.display='none'
 
 })
 
 document.getElementById('btnReturn').addEventListener('click', () => {
     document.getElementById('coverPageId').style.display= 'block';
     document.getElementById('skills').style.display= 'none';
+    document.getElementById('pojectid').style.display='none'
     })
 
-document.getElementById('logoid').addEventListener('click', () => { 
-   document.getElementById('aboutMeid').style.display='block';
-   document.getElementById('coverPageId').style.display= 'none'
-})
+
 
 document.getElementById('btnaboutme').addEventListener('click', () => { 
   document.getElementById('aboutMeid').style.display='block';
-  document.getElementById('coverPageId').style.display= 'none'
+  document.getElementById('coverPageId').style.display= 'none';
+  document.getElementById('pojectid').style.display='none';
 })
 
+document.getElementById('pojects').addEventListener('click', ()=>{
+  document.getElementById('pojectid').style.display='block';
+  document.getElementById('coverPageId').style.display= 'none';
+  document.getElementById('skills').style.display= 'none';
+  document.getElementById('aboutMeid').style.display= 'none'
 
+
+
+
+})
+
+// pagina principal
     
     var canvas = document.getElementById('canvas'),
     context = canvas.getContext('2d'),
@@ -234,3 +247,14 @@ document.getElementById('btnaboutme').addEventListener('click', () => {
   
     if (u > 1) giveBirth(e, u - 1);
   }
+
+
+  let instance = M.Carousel.init({
+    fullWidth: true,
+    indicators: true
+  });
+
+
+  // proyectos
+
+  

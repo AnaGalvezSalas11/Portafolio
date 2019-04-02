@@ -1,5 +1,10 @@
 // interaccion de botones y div
 
+// Initialization for Components Materialize
+document.addEventListener("DOMContentLoaded", function(){
+window.M.AutoInit();
+});
+
 document.getElementById('skillsButton').addEventListener('click', () => {
     document.getElementById('skills').style.display= 'block';
     document.getElementById('coverPageId').style.display= 'none';
@@ -249,12 +254,10 @@ document.getElementById('pojects').addEventListener('click', ()=>{
   }
 
 
-  let instance = M.Carousel.init({
-    fullWidth: true,
-    indicators: true
-  });
-
 
   // proyectos
 
-  
+  var instance = M.Carousel.init({
+    fullWidth: true,
+    indicators: true
+  });

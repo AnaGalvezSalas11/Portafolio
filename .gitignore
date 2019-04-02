@@ -1,2 +1,6 @@
 
 .DS_Store
+materialize.css
+materialize.min.css
+materialize.min.js
+materialize.js

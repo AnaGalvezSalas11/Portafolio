@@ -18,7 +18,7 @@ header{
 .skillsButtonclass, .pojectsButton, .btnaboutMe{
     padding: 10px;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 30px !important;
     color: #3d3c3c;
     border-radius: 6px;
     cursor: pointer;

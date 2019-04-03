@@ -255,9 +255,4 @@ document.getElementById('pojects').addEventListener('click', ()=>{
 
 
 
-  // proyectos
-
-  var instance = M.Carousel.init({
-    fullWidth: true,
-    indicators: true
-  });
+  

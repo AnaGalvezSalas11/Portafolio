@@ -12,6 +12,7 @@ header{
     width: 100%;
     position: relative;
     z-index: 100;
+    
  }
 
 
@@ -24,7 +25,7 @@ header{
     cursor: pointer;
     font-family: Arial;
     position: relative;
-    left: 70%;
+    margin: center;
     top: 10px;
 }
 
@@ -332,6 +333,8 @@ body {
     border-radius: 15px;
     overflow: auto;
     white-space: nowrap;
+    cursor: e-resize;
+    
 }
 
 .img1{
@@ -356,7 +359,6 @@ body {
     position: absolute;
     top: 93%;
     width: 100%;
-    left: 80%;
 }
 
 .point{
@@ -367,6 +369,8 @@ body {
     border-radius: 50%;
     margin: 8px;
     cursor: pointer;
+    left: 80%;
+    position: relative;
 }
 
 .point:hover{
@@ -420,5 +424,38 @@ body {
 }
 
 .linkrepo{
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+   text-decoration: none;
+   color: #3d3c3c;
+   font-weight: bold;
 }
+
+figure {
+    border-radius: 100%;
+    display: block;
+    height: 150px;
+    position: relative;
+    width: 150px;
+  }
+
+  figure:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  figure:after {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    color: #fff;
+    content: attr(title);
+    opacity: 0;
+    padding: 6px 12px;
+    position: absolute;
+    bottom: 30px;
+    right: 10%;
+    transition: all .25s ease;
+    visibility: hidden;
+    white-space: nowrap;
+    font-family: Arial;
+
+  }
+    

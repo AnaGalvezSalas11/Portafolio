@@ -1,9 +1,6 @@
 // interaccion de botones y div
 
 // Initialization for Components Materialize
-document.addEventListener("DOMContentLoaded", function(){
-window.M.AutoInit();
-});
 
 document.getElementById('skillsButton').addEventListener('click', () => {
     document.getElementById('skills').style.display= 'block';
@@ -255,4 +252,23 @@ document.getElementById('pojects').addEventListener('click', ()=>{
 
 
 
-  
+  document.getElementById('btnproject1').addEventListener('click', ()=> {
+  document.getElementById('projectid1').style.visibility='visible';
+  document.getElementById('projectid2').style.visibility='hidden';
+  document.getElementById('projectid3').style.visibility='hidden';
+
+});
+
+  document.getElementById('btnproject2').addEventListener('click', ()=> {
+  document.getElementById('projectid1').style.visibility='hidden';
+  document.getElementById('projectid2').style.visibility='visible';
+  document.getElementById('projectid3').style.visibility='hidden';
+    
+  });
+
+    document.getElementById('btnproject3').addEventListener('click', ()=> {
+    document.getElementById('projectid1').style.visibility='hidden';
+    document.getElementById('projectid2').style.visibility='hidden';
+    document.getElementById('projectid3').style.visibility='visible';
+      
+    });

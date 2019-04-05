@@ -83,6 +83,7 @@ body {
     top: 200px;
     max-width: 100%;
     height: auto;
+    
 }
 
 .icon5{
@@ -157,6 +158,7 @@ body {
 .imgIn{
     width: 8%;
     height: auto;
+    
 }
 
 /* sobre mi */
@@ -300,7 +302,6 @@ body {
     -o-background-size: cover;
     background-size: cover; 
     display: none;
-    /* overflow: hidden; */
     height: 100%;
 }
 
@@ -308,8 +309,11 @@ body {
     position: relative;
     width: 70%;
     height: 70%;
-    background-color: black;
+    /* background-color: black; */
     border-radius: 15px; 
+    top: 15%;
+    margin: auto;
+    
 }
 
 .project{
@@ -317,12 +321,21 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
+    visibility: hidden;
+
     }
 
 .imageproject{
     height: 100%;
-    width: 50%;
+    width: 60%;
     position: relative;
+    border-radius: 15px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.img1{
+    height: 100%;
 }
 
 .description1{
@@ -333,38 +346,20 @@ body {
     margin: 0;
     color: aliceblue;
     font-weight: bolder;
+
 }
 
-.btnleftcss, .btnrightcss{
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 36px;
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-    cursor: pointer;
-}
 
-.btnrightcss{
-    left: 95%;
-}
 
-.btnrightcss:hover{
-    color: #AE2D18;
-}
-
-.btnleftcss:hover{
-    color: #AE2D18;
-}
 
 .points{
     position: absolute;
     top: 93%;
     width: 100%;
-    text-align: center;
+    left: 80%;
 }
 
-/* .point{
+.point{
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -376,14 +371,54 @@ body {
 
 .point:hover{
     background-color: rgb(97, 53, 53);
-} */
-/* 
+} 
+
 .actual{
     visibility: visible;
-    opacity: 1;
-    transition: visibility 1s, opacity 1s 
-} */
+   
+} 
 
-/* .active{
+.active{
     background-color: gray;
-} */
+} 
+
+.link{
+    display: flex;
+    justify-content: space-around;
+    top: 30%;
+    position: relative;
+    left: 22%;
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 20px;
+    color: #3d3c3c;
+
+}
+
+.titleProject{
+    text-align: -webkit-center;
+    position: relative;
+    font-family: Arial;
+    font-size-adjust: inherit;
+    font-size: 35px;
+    left: 20%;
+    color: #3d3c3c
+
+}
+
+.descriptionProject{
+    text-align: -webkit-center;
+    width: 80%;
+    position: relative;
+    top: 10%;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: normal;
+    left: 30%;
+    color: #3d3c3c
+
+}
+
+.linkrepo{
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}

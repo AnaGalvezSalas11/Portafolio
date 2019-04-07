@@ -115,6 +115,8 @@ body {
 
 
 /* habilidades */
+
+
 .styleskills{
     margin: 0; 
     padding: 0;
@@ -133,33 +135,32 @@ body {
 
 }
 
+.styleskillsdiv{
+    top: 200px;
+    position: relative;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    /* margin: center; */
+}
+
+
 .texticon{
     font-size: 40px;
 }
 
 
-.icon6, .icon7, .icon8, .icon9{
-    margin: 8%;
+.icon6, .icon7, .icon8, .icon9, .icon10, .icon11, .icon12{
     font-size: 80px;
     position: relative;
-    left: 8%;
+    /* margin: 2%; */
+    padding: 2%;
+    height: 100%;
+    width: 100%;
 
 }
 
 
-.icon10, .icon11, .icon12{
-    margin: 8%;
-    font-size: 80px;
-    position: relative;
-    left: 15%;    
-
-}
-
-
-.styleskillsdiv{
-    top: 300px;
-    position: relative;
-}
 
 .slide-top {
 	-webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate-reverse forwards;
@@ -188,17 +189,6 @@ body {
   }
   
 
-
-
-.devicon{
-    width: 100%;
-    position: relative;
-    top: 200px; 
-    left: 200px;
-}
-
-
-
      .icon4{
     opacity: 0; 
     /* right: auto;
@@ -209,9 +199,7 @@ body {
 
     }  
 
-.skillsStyle{
-    display: none;
-}
+
 
 /* footer */
 .information{

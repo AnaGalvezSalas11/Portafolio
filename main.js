@@ -31,6 +31,9 @@ document.getElementById('btnaboutme').addEventListener('click', () => {
   document.getElementById('aboutMeid').style.display='block';
   document.getElementById('coverPageId').style.display= 'none';
   document.getElementById('pojectid').style.display='none';
+  document.getElementById('skills').style.display= 'none';
+
+
 })
 
 document.getElementById('pojects').addEventListener('click', ()=>{

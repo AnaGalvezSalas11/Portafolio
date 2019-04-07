@@ -4,7 +4,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ana Gálvez</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -16,6 +18,7 @@
 </head>
 
 <body>
+    
     <header id="header">
         <div class="btnheader">
         <a  type="button" id= "btnaboutme" class="btnaboutMe">Sobre Mi</a>
@@ -38,37 +41,34 @@
         <section class= "aboutMe  animated fadeIn delay-s" id="aboutMeid">
             <div class="aboutMeDiv">
             <img class="imageAna" src="image/ana.jpg" alt="images/ana.jpg">
-            <p class="description" > Soy parte de la 7º generación de Laboratoria y Trabajadora Social de profesión, con habilidades para la comunicación interpersonal, gestión y trabajo en equipo. Los desafios los considero como una posibilidad para desarrollarme profesional y personalmente, es por este motivo que decidí ser parte de éste bootcamp.</p>
-
-            
+            <div class="contentdescription">
+                <h2 class="titledescription">Sobre mi:</h2>
+                <p class="description" > Soy parte de la 7º generación de Laboratoria y Trabajadora Social de profesión, con habilidades para la comunicación interpersonal, gestión y trabajo en equipo. Los desafios los considero como una posibilidad para desarrollarme profesional y personalmente, es por este motivo que decidí ser parte de éste bootcamp.</p>
+            </div>
             </div>
         </section>
 
 
         <section class="styleskills animated fadeIn delay-s" id="skills" >
             <a id="btnReturn" class="fas fa-angle-double-left fa-2x icon4"></a>
-            <div class="container">
             <div class="styleskillsdiv slide-top" >
-                <a class="devicon-css3-plain icon6"></a>
-                <a class="devicon-javascript-plain icon7" ></a>
-                <a class="devicon-html5-plain icon8"></a>          
-                <a class="devicon-react-original icon9"></a>
-            </div>
-            <div class="styleskillsdiv2 slide-top">
-                <a class="devicon-git-plain icon10"></a>
-                <a class="devicon-github-plain icon11"></a>
-                <a class="devicon-visualstudio-plain icon12"></a>
-            </div>
+                <a class="devicon-css3-plain icon6"><p class="texticon">Css</p></a> 
+                <a class="devicon-javascript-plain icon7"><p class="texticon">Javascript</p></a>
+                <a class="devicon-html5-plain icon8"><p class="texticon">Html</p></a>      
+                <a class="devicon-react-original icon9"><p class="texticon">React</p></a>
+                <a class="devicon-git-plain icon10"><p class="texticon">Git</p></a>
+                <a class="devicon-github-plain icon11"><p class="texticon">Github</p></a>
+                <a class="devicon-visualstudio-plain icon12"><p class="texticon">Visual Studio Code</p></a>
             </div>
         </section>
 
-        <section class="projectcontent" id="pojectid">
+        <section class="projectcontent animated fadeIn delay-s" id="pojectid">
 
                 <div class="contenedor">
 
                 <div class="project actual" id="projectid1">
                         <div class="imageproject">
-                            <img class="img1" src="image/pokemongo.png" alt="ana">
+                            <img class="img1" src="image/pokemon.png" alt="ana">
                         </div>
                         <div class="description1">
                             <p class="titleProject">PokeGo!</p>
@@ -77,21 +77,24 @@
                             <a class="linkrepo" href="https://anagalvezsalas11.github.io/scl-2018-12-bc-core-data-lovers/" >Ver Demo</a> 
                             <a class="linkrepo" href="https://github.com/AnaGalvezSalas11/scl-2018-12-bc-core-data-lovers" >Ver Github</a>
                             </div>
-                    </div>
-                </div>
-
-                <div class="project" id="projectid2">
-                        <img class="imageproject" src="image/ana.jpg" alt="ana">
-                        <div class="description1">
-                            <p class="titleProject"> bla bla 2</p>
-                            <div  class="link">
-                                <a>Demo</a> 
-                                <a>Github</a>
-                            </div>
                         </div>
                 </div>
 
-                <div class="project" id="projectid3">
+                <div class="project" id="projectid2">
+                        <div class="imageproject">
+                                <img class="img1" src="image/burgerqueen.png" alt="ana">
+                            </div>
+                            <div class="description1">
+                                <p class="titleProject">Burger Queen</p>
+                                <p class="descriptionProject">Esta aplicación fue hecha para un restorant y permite al garzón anotar el nombre de cliente, el detalle del pedido y enviarlo a la cocina </p>
+                                <div  class="link">
+                                <a class="linkrepo" href="https://anagalvezsalas11.github.io/SCL007-BurgerQueen/" >Ver Demo</a> 
+                                <a class="linkrepo" href="https://github.com/AnaGalvezSalas11/SCL007-BurgerQueen" >Ver Github</a>
+                                </div>
+                            </div>
+                </div>
+
+                <!-- <div class="project" id="projectid3">
                         <img class="imageproject"src="image/ana.jpg" alt="ana">
                         <div class="description1">
                             <p class="titleProject">ESTAMOS TRABAJANDO ESTA SECCIÓN!</p>
@@ -100,7 +103,7 @@
                                     <p>Github</p>
                             </div>
                         </div>
-                </div>
+                </div> -->
 
                 <!-- <a class="fas fa-chevron-left btnleftcss" id="btnleft"></a>
                 <a class="fas fa-chevron-right btnrightcss" id="btnright"></a> -->
@@ -108,7 +111,7 @@
                  <div class="points">
                     <figure class="point active"  id="btnproject1" title="Ver proyecto 1" ></figure>
                     <figure id="btnproject2" class="point" title="Ver proyecto 2"></figure>
-                    <figure id= "btnproject3" class="point" title="Ver proyecto 3"></figure>
+                    <!-- <figure id= "btnproject3" class="point" title="Ver proyecto 3"></figure> -->
                 </div>
                 </div>
                 

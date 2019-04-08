@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 /* header */
 
 header{
@@ -23,7 +25,7 @@ header{
     color: #3d3c3c;
     border-radius: 6px;
     cursor: pointer;
-    font-family: Arial;
+    /* font-family: Arial; */
     position: relative;
     margin: center;
     top: 10px;
@@ -70,6 +72,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .home{
@@ -147,6 +150,7 @@ body {
 
 .texticon{
     font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -157,6 +161,8 @@ body {
     padding: 2%;
     height: 100%;
     width: 100%;
+    
+
 
 }
 
@@ -278,7 +284,7 @@ body {
 
 .titledescription{
     position: relative;
-    font-family: Arial;
+    /* font-family: Arial; */
     color: #3d3c3c;
     height: 100%;
     padding: 0;
@@ -289,7 +295,7 @@ body {
 .description {
     position: relative;
     text-align: justify;
-    font-family: Arial;
+    /* font-family: Arial; */
     color: #3d3c3c;
     
     font-size: 20px !important;  
@@ -310,157 +316,94 @@ body {
     background-size: cover; 
     display: none;
     height: 100%;
+    /* overflow: hidden; */
 }
 
-.contenedor{
+.container{
     position: relative;
-    width: 70%;
-    height: 70%;
-    /* background-color: black; */
-    border-radius: 15px; 
-    top: 15%;
-    margin: auto;
+    width: 100%;
+    /* margin: 150px auto 0; */
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 40px;
+    top: 100px;
+    text-align: center;
     
 }
 
-.project{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    visibility: hidden;
-
-    }
-
-.imageproject{
-    height: 100%;
-    width: 60%;
+.container .card{
     position: relative;
-    border-radius: 15px;
+    /* background:rgb(88, 88, 88); */
     overflow: hidden;
-    
+    border-radius: 10px;
+    transition: 0.5s;
+    margin: 3%;
 }
 
-.img1{
-    height: 100%;
+.burger{
+    background: white;
+}
+
+
+.container .card .img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.container .card:hover .img-box{
+    opacity: .2;
+}
+
+.container .card .img-box img{
     width: 100%;
 }
 
-.description1{
-    height: 100%;
-    position: relative;
-    width: 50%;
-    padding: 0;
-    margin: 0;
+.container .card .content {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: -100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.54s;
+}
+
+.container .card:hover .content{
+    bottom: 0;
+}
+
+.container .card:nth-child(1) .content{
+    background: linear-gradient(0deg, #EE8A6B, transparent)
+}
+
+.container .card:nth-child(2) .content{
+    background: linear-gradient(0deg, #EE8A6B, transparent)
+}
+    
+.container .card .content ul {
+ display: flex;
+ margin: 20px 0 0;
+ padding: 0;
+ align-items: center;
+ justify-content: center;
+
+}
+
+.container .card .content ul li{
+    list-style: none;
+}
+
+.container .card .content ul li a{
     color: aliceblue;
-    font-weight: bolder;
-
+    padding: 0 15px;
+    font-size: 30px;
+    transition: 0.5s;
+    text-decoration: none;
 }
 
-
-
-
-.points{
-    position: absolute;
-    top: 93%;
-    width: 100%;
-}
-
-.point{
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-color: white;
-    border-radius: 50%;
-    margin: 8px;
-    cursor: pointer;
-    left: 80%;
-    position: relative;
-}
-
-.point:hover{
-    background-color: rgb(97, 53, 53);
-} 
-
-.actual{
-    visibility: visible;
-   
-} 
-
-.active{
-    background-color: gray;
-} 
-
-.link{
-    display: flex;
-    justify-content: space-around;
-    top: 30%;
-    position: relative;
-    left: 22%;
-    font-family: Arial;
-    font-weight: normal;
-    font-size: 20px;
-    color: #3d3c3c;
-
-}
-
-.titleProject{
-    text-align: -webkit-center;
-    position: relative;
-    font-family: Arial;
-    font-size-adjust: inherit;
-    font-size: 35px;
-    left: 20%;
-    color: #3d3c3c
-
-}
-
-.descriptionProject{
-    text-align: -webkit-center;
-    width: 80%;
-    position: relative;
-    top: 10%;
-    font-family: Arial;
-    font-size: 20px;
-    font-weight: normal;
-    left: 30%;
-    color: #3d3c3c
-
-}
-
-.linkrepo{
-   text-decoration: none;
-   color: #3d3c3c;
-   font-weight: bold;
-}
-
-figure {
-    border-radius: 100%;
-    display: block;
-    height: 150px;
-    position: relative;
-    width: 150px;
-  }
-
-  figure:hover:after {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  figure:after {
-    background-color: rgba(0, 0, 0, .5);
-    border-radius: 5px;
-    color: #fff;
-    content: attr(title);
-    opacity: 0;
-    padding: 6px 12px;
-    position: absolute;
-    bottom: 30px;
-    right: 10%;
-    transition: all .25s ease;
-    visibility: hidden;
-    white-space: nowrap;
-    font-family: Arial;
-
-  }
-    

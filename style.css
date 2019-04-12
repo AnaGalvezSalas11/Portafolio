@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /* header */
 
@@ -12,23 +11,24 @@ header{
  .btnheader{
     display: flex;
     width: 100%;
-    position: relative;
     z-index: 100;
+    justify-content: right;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    
     
  }
 
 
 .skillsButtonclass, .pojectsButton, .btnaboutMe{
-    padding: 10px;
-    font-weight: 600;
-    font-size: 20px !important;
+    font-size: 25px;
     color: #3d3c3c;
     border-radius: 6px;
     cursor: pointer;
-    /* font-family: Arial; */
-    position: relative;
-    margin: center;
-    top: 10px;
+    font-family: 'Rakkas', cursive;
+    margin: 1%;
+    border: 100%;
 }
 
 .skillsButtonclass:hover{
@@ -48,16 +48,28 @@ header{
     opacity: 0.5;
 }
 
+figcaption {
+    display:none; 
+    transition: all .5s;
+  }
+  /* Visible texto */
+figure:hover > figcaption {
+    display:block;
+    transition: all .5s;
+  }
+
 
 /* pagina principal */
 
-.canvasclass{
-    position: inherit
-}
+
 
 .coverPage{
    width: 100%;
    height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
 }
 
 html{
@@ -72,21 +84,19 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .home{
     overflow: hidden; 
     background: #f3c6b4; 
+    display: flex;
 }
 
 .logo{
-    width: 40%;
+    width: 30rem;
     position: absolute;
-    left: 30%;
-    top: 200px;
-    max-width: 100%;
-    height: auto;
+
+        
     
 }
 
@@ -144,13 +154,13 @@ body {
     height: 50%;
     width: 100%;
     display: flex;
-    /* margin: center; */
+    
 }
 
 
 .texticon{
-    font-size: 40px;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-family:'Rakkas', cursive;
 }
 
 
@@ -220,15 +230,16 @@ body {
     justify-content:space-around;
     position: relative;
     width: 100%;
-    margin-bottom: 10px;
     height: auto;
 }
-
+ 
 .imgIn{
     width: 8%;
     height: auto;
     
 }
+
+
 
 /* sobre mi */
 
@@ -236,7 +247,6 @@ body {
 .aboutMe{
     margin: 0; 
     padding: 0;
-    flex-direction: column;
     width: 100%;
     background: url(image/wallpapper.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -246,61 +256,64 @@ body {
     display: none;
     height: 100%;
     overflow: scroll;
-    /* display: inline; */
 
 }
 
-.skillcontent{
-    display: none;
-}
 
 .aboutMeDiv{
-    display: inline-flex;
+    display: flex;
     position: relative;
-    top: 60px;
-    padding: 4%;
-    justify-content:space-around;
-
-
+    top: 100px;
+    left: 15%;
 }
 
 .imageAna {
     border-radius: 57px;
     /* top: 130px; */
     /* left: 200px; */
+    /* position: absolute; */
+    width: 25%;
+    height: 25%;
     position: relative;
-    width: 30%;
-    height: 30%;
+    
     
 }
 
 .contentdescription{
-    display: block;
+    /* display: block; */
     height: 100%;
     width: 40%;
-    top: 100px;
+    /* top: 100px; */
     position: relative;
+    left: 5%;
 }
 
 .titledescription{
-    position: relative;
-    /* font-family: Arial; */
     color: #3d3c3c;
     height: 100%;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    top: 50px;
+    position: relative;
     
 }
 
 .description {
     position: relative;
     text-align: justify;
-    /* font-family: Arial; */
     color: #3d3c3c;
-    
+    font-family: 'Poppins', sans-serif;
     font-size: 20px !important;  
+    font-weight: lighter;
+    position: relative;
+    top: 40px;
 } 
-
+.cv{
+    top: 30px;
+    position: relative;
+    color: #3d3c3c;
+}
 
 /* proyectos */
 
@@ -405,5 +418,9 @@ body {
     font-size: 30px;
     transition: 0.5s;
     text-decoration: none;
+}
+
+.texticon{
+    color: #3d3c3c,
 }
 

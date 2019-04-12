@@ -255,23 +255,10 @@ document.getElementById('pojects').addEventListener('click', ()=>{
 
 
 
-  document.getElementById('btnproject1').addEventListener('click', ()=> {
-  document.getElementById('projectid1').style.visibility='visible';
-  document.getElementById('projectid2').style.visibility='hidden';
-  document.getElementById('projectid3').style.visibility='hidden';
-
-});
-
-  document.getElementById('btnproject2').addEventListener('click', ()=> {
-  document.getElementById('projectid1').style.visibility='hidden';
-  document.getElementById('projectid2').style.visibility='visible';
-  document.getElementById('projectid3').style.visibility='hidden';
-    
-  });
-
-    document.getElementById('btnproject3').addEventListener('click', ()=> {
-    document.getElementById('projectid1').style.visibility='hidden';
-    document.getElementById('projectid2').style.visibility='hidden';
-    document.getElementById('projectid3').style.visibility='visible';
-      
+  document.addEventListener('DOMContentLoaded', function () {
+   document.getElementById('photo');
+  
+    directions.addEventListener('change', function () {
+      figure.setAttribute('tooltip-dir');
     });
+  });

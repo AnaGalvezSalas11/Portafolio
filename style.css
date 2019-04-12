@@ -33,19 +33,19 @@ header{
 
 .skillsButtonclass:hover{
     color: rgb(3, 3, 3);
-    background-color: rgb(245, 240, 245);
-    opacity: 0.5;
+    background-color: rgb(233, 156, 112);
+    opacity: 0.8;
 }
 .pojectsButton:hover{
     color: rgb(3, 3, 3);
-    background-color: rgb(245, 240, 245);
-    opacity: 0.5;
+    background-color: rgb(233, 156, 112);
+    opacity: 0.8;
 }
 
 .btnaboutMe:hover{
     color: rgb(3, 3, 3);
-    background-color: rgb(245, 240, 245);
-    opacity: 0.5;
+    background-color: rgb(233, 156, 112);
+    opacity: 0.8;
 }
 
 figcaption {
@@ -161,6 +161,7 @@ body {
 .texticon{
     font-size: 50px;
     font-family:'Rakkas', cursive;
+    color: #3d3c3c;
 }
 
 
@@ -171,12 +172,8 @@ body {
     padding: 2%;
     height: 100%;
     width: 100%;
-    
-
-
+    color: #3d3c3c;
 }
-
-
 
 .slide-top {
 	-webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate-reverse forwards;
@@ -424,3 +421,23 @@ body {
     color: #3d3c3c,
 }
 
+.textDescriptionProject{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.iconProject{
+    top: 20px;
+}
+
+.btnproject{
+    color: #3d3c3c;
+    text-decoration: none;
+    position: relative;
+    margin-right: 10%;
+}
+
+.titleproject{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}

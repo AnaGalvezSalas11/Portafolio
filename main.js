@@ -12,7 +12,7 @@ document.getElementById('skillsButton').addEventListener('click', () => {
 })
 
 document.getElementById('btnhome').addEventListener('click', () =>{
-  document.getElementById('coverPageId').style.display='block';
+  document.getElementById('coverPageId').style.display='flex';
   document.getElementById('aboutMeid').style.display= 'none';
   document.getElementById('skills').style.display= 'none';
   document.getElementById('pojectid').style.display='none'

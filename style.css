@@ -513,5 +513,22 @@ body {
 
 @media screen and (max-width:600px){
  
+    .container .card{
+      height: 70%;
+    }
+
+    .titleproject{
+
+        font-size: 20px;
+
+    }
+
+    .container .card .content{
+        height: 100%;
+    }
+
+    .textDescriptionProject{
+        font-size: 10px;
+    }
 }
 

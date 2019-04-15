@@ -139,6 +139,7 @@ body {
 
     .logosFooter{
         font-size: 15px;
+        
     }
 
 
@@ -246,7 +247,7 @@ body {
         }
 
         .styleskillsdiv{
-            display: -webkit-box !important;
+            display: block;
             top: 40px;
             text-align: center;
             left: 25%

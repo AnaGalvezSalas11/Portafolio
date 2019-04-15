@@ -421,6 +421,7 @@ body {
     margin: 3%;
 }
 
+
 .burger{
     background: white;
 }
@@ -440,6 +441,7 @@ body {
 
 .container .card .img-box img{
     width: 100%;
+    
 }
 
 .container .card .content {

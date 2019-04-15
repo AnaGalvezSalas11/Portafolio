@@ -246,7 +246,7 @@ body {
         }
 
         .styleskillsdiv{
-            display: -webkit-box;
+            display: -webkit-box !important;
             top: 40px;
             text-align: center;
             left: 25%
@@ -338,7 +338,7 @@ body {
     text-align: justify;
     color: #3d3c3c;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px !important;  
+    font-size: 20px;  
     font-weight: lighter;
     position: relative;
     top: 40px;
@@ -348,6 +348,33 @@ body {
     position: relative;
     color: #3d3c3c;
 }
+
+@media screen and (max-width:600px){
+    .description{
+        font-size: 10px;
+        left: 8%;
+        
+    }
+    .aboutMeDiv{
+        display: block;
+        top: 8%;
+        text-align: center
+    }   
+
+    .imageAna{
+        width: 50%;
+       height: 50%;
+    }
+
+    .contentdescription{
+        width: 80%;
+    }
+
+    .cv{
+        top: 5px;
+    }
+}
+
 
 /* proyectos */
 
@@ -478,3 +505,8 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
 }
+
+@media screen and (max-width:600px){
+ 
+}
+

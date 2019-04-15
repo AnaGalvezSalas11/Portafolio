@@ -61,8 +61,6 @@ figure:hover > figcaption {
 
 /* pagina principal */
 
-
-
 .coverPage{
    width: 100%;
    height: 100%;
@@ -94,11 +92,10 @@ body {
 
 .logo{
     width: 30rem;
-    position: absolute;
-
-        
-    
+    position: absolute;    
 }
+
+
 
 .icon5{
     cursor: pointer;
@@ -124,7 +121,28 @@ body {
 .icon5:hover{
     color: rgb(216, 92, 21);
 }
+@media screen and (max-width: 600px) {
+    .logo{
+        width: 20rem;
 
+    }
+
+    .skillsButtonclass, .pojectsButton, .btnaboutMe{
+    
+        font-size: 20px;
+        margin-inline-start: 5%;
+    }
+
+    .btnheader{
+        justify-content: center;
+    }
+
+    .logosFooter{
+        font-size: 15px;
+    }
+
+
+}
 
 
 /* habilidades */
@@ -152,27 +170,29 @@ body {
     top: 200px;
     position: relative;
     height: 50%;
-    width: 100%;
+    width: 50%;
     display: flex;
+    left: 6%
+
     
 }
 
 
 .texticon{
-    font-size: 50px;
+    font-size: 40px;
     font-family:'Rakkas', cursive;
     color: #3d3c3c;
+    margin: 0;
 }
 
 
 .icon6, .icon7, .icon8, .icon9, .icon10, .icon11, .icon12{
-    font-size: 80px;
-    position: relative;
+    font-size: 60px;
     /* margin: 2%; */
-    padding: 2%;
-    height: 100%;
-    width: 100%;
     color: #3d3c3c;
+    margin: 5%;
+    padding: 0;
+    margin-left: 6%;
 }
 
 .slide-top {
@@ -213,6 +233,27 @@ body {
     }  
 
 
+
+    @media screen and (max-width: 600px){
+        .icon6, .icon7, .icon8, .icon9, .icon10, .icon11, .icon12{
+            font-size: 40px;
+            position: relative;
+            
+        }        
+
+        .texticon{
+            font-size: 20px;
+        }
+
+        .styleskillsdiv{
+            display: -webkit-box;
+            top: 40px;
+            text-align: center;
+            left: 25%
+
+        }
+    
+    }
 
 /* footer */
 .information{
@@ -260,29 +301,25 @@ body {
 .aboutMeDiv{
     display: flex;
     position: relative;
+    justify-content: center;
     top: 100px;
-    left: 15%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .imageAna {
     border-radius: 57px;
-    /* top: 130px; */
-    /* left: 200px; */
-    /* position: absolute; */
     width: 25%;
     height: 25%;
-    position: relative;
     
     
 }
 
 .contentdescription{
-    /* display: block; */
     height: 100%;
     width: 40%;
-    /* top: 100px; */
-    position: relative;
-    left: 5%;
+    margin-left: 3%;
 }
 
 .titledescription{

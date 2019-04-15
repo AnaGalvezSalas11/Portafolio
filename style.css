@@ -358,7 +358,8 @@ body {
     .aboutMeDiv{
         display: block;
         top: 8%;
-        text-align: center
+        text-align: center;
+        overflow: scroll
     }   
 
     .imageAna{
@@ -373,6 +374,7 @@ body {
     .cv{
         top: 5px;
     }
+
 }
 
 

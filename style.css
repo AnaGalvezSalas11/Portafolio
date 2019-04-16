@@ -48,15 +48,7 @@ header{
     opacity: 0.8;
 }
 
-figcaption {
-    display:none; 
-    transition: all .5s;
-  }
-  /* Visible texto */
-figure:hover > figcaption {
-    display:block;
-    transition: all .5s;
-  }
+
 
 
 /* pagina principal */
@@ -250,10 +242,13 @@ body {
 
         .styleskillsdiv{
             display: block;
-            top: 40px;
+            top: 30px;
             text-align: center;
             left: 25%
 
+        }
+        .contentdescription{
+            top: 20px;
         }
     
     }
@@ -501,12 +496,7 @@ body {
     top: 20px;
 }
 
-.btnproject{
-    color: #3d3c3c;
-    text-decoration: none;
-    position: relative;
-    margin-right: 10%;
-}
+
 
 .titleproject{
     font-family: 'Poppins', sans-serif;
@@ -532,5 +522,48 @@ body {
     .textDescriptionProject{
         font-size: 10px;
     }
+
+    .btngit{
+        left: 55%;  
+    }
+
+    .btnPokemon{
+        top:88%;
+    }
+    
+
 }
 
+.floatingMessageDemo{
+    display: block;
+}
+
+.floatingMessageGit{
+    display: block;
+}
+
+figcaption {
+    display:none; 
+    transition: all .5s;
+    position: absolute;
+    bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 45%;    
+    
+  }
+  /* Visible texto */
+figure:hover > figcaption {
+    display:block;
+    transition: all .5s;
+  }
+
+  .btnproject{
+    color: #3d3c3c;
+    text-decoration: none;
+    margin-right: 10%;
+    position: absolute
+}
+
+.btnPokemon{
+    bottom: 23%;
+}
